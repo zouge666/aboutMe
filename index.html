@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senhao Zou | Portfolio</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #1b1f24;
+        --muted: #5f6672;
+        --line: #d7dbe3;
+        --accent: #2b2f36;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+        background:
+          linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.04) 0,
+            rgba(0, 0, 0, 0.04) 12px,
+            transparent 12px,
+            transparent 24px
+          ),
+          linear-gradient(135deg, #ffffff 0, #ffffff 24px);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      main {
+        max-width: 980px;
+        margin: 36px auto 64px;
+        padding: 0 20px;
+        display: grid;
+        gap: 20px;
+      }
+      header {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 24px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+        letter-spacing: 0.6px;
+      }
+      .subtitle {
+        font-family: "SF Mono", Menlo, Monaco, monospace;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        margin-top: 12px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .contact a:hover {
+        border-bottom-color: var(--accent);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 20px 24px;
+      }
+      h2 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        font-family: "SF Mono", Menlo, Monaco, monospace;
+      }
+      .grid {
+        display: grid;
+        gap: 12px;
+      }
+      .two-col {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .label {
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+      }
+      .item {
+        border-top: 1px solid var(--line);
+        padding-top: 12px;
+      }
+      .item:first-of-type {
+        border-top: none;
+        padding-top: 0;
+      }
+      .item-title {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-weight: 600;
+      }
+      .item-meta {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        border: 1px solid var(--line);
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 999px;
+        background: #fafbfe;
+      }
+      .resume {
+        width: 100%;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+      @media (max-width: 600px) {
+        .item-title {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Senhao Zou</h1>
+        <div class="subtitle">Software Developer · Copenhagen</div>
+        <div class="contact">
+          <a href="https://www.linkedin.com">LinkedIn</a>
+          <span>Copenhagen, Denmark</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <div class="grid two-col">
+          <div>
+            <div class="label">Education</div>
+            <div>
+              Technical University of Denmark · M.Sc. Computer Science and
+              Engineering (Expected 2026)
+            </div>
+          </div>
+          <div>
+            <div class="label">Focus</div>
+            <div>Distributed Systems · DevOps · Data Visualization</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="item-title">
+            <span>Digital Engineer (Full Stack) · BYD</span>
+            <span class="item-meta">Aug 2023 - Jun 2024</span>
+          </div>
+          <ul>
+            <li>
+              Rebuilt intranet project management system with React and Node.js
+            </li>
+            <li>
+              Refactored database and data comparison features for faster
+              analysis
+            </li>
+            <li>
+              Built Express + MongoDB RESTful APIs for data ingestion and query
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>Front-end Developer · Hello Bike</span>
+            <span class="item-meta">Aug 2022 - Oct 2022</span>
+          </div>
+          <ul>
+            <li>
+              Delivered page components and mock data for insurance product
+              iterations
+            </li>
+            <li>
+              Worked on credit domain integration across Hello Bike and partner
+              systems
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>Platform Developer · Deep Soft Technology</span>
+            <span class="item-meta">Dec 2021 - May 2022</span>
+          </div>
+          <ul>
+            <li>
+              Built assessment scoring module pages with HTML, CSS, JS, and
+              Bootstrap
+            </li>
+            <li>
+              Designed SQL queries for performance data and real-time insights
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="item">
+          <div class="item-title">
+            <span
+              >job search platform · React Native / TypeScript / Tailwind
+              CSS</span
+            >
+            <span class="item-meta">Aug 2024 - Present</span>
+          </div>
+          <ul>
+            <li>
+              Built a Singapore job search platform to streamline recruiting
+            </li>
+            <li>
+              Used AI tooling and Figma prototypes to accelerate component
+              delivery
+            </li>
+            <li>
+              Packaged reusable pop-ups and inputs with standardized Git flows
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>World Cup Rumor Analysis · Python / R / Power BI</span>
+            <span class="item-meta">Feb 2025 - May 2025</span>
+          </div>
+          <ul>
+            <li>
+              Analyzed 7,663 players and 916 matches to evaluate key features
+            </li>
+            <li>
+              Modeled match outcomes and quantified feature impact on results
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>
+              Rural Governance System · Spring Boot / JavaScript / Bootstrap
+            </span>
+            <span class="item-meta">Jan 2021 - Jul 2021</span>
+          </div>
+          <ul>
+            <li>
+              Built disaster response reporting and command visualization tools
+            </li>
+            <li>
+              Rendered batch markers and polygons in mini-app map components
+            </li>
+            <li>Improved async request handling for higher stability</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="item">
+            <div class="label">Software Engineering</div>
+            <div>TypeScript, JavaScript, Java, C#, C++, HTML, CSS</div>
+          </div>
+          <div class="item">
+            <div class="label">Frameworks</div>
+            <div>
+              React.js, Spring Boot, Vue.js, .Net, Angular.js, Next.js,
+              Express.js, Node.js
+            </div>
+          </div>
+          <div class="item">
+            <div class="label">Cloud, DevOps</div>
+            <div>
+              Linux, DevOps, CI/CD, Libvirt/KVM, Docker, Jenkins, Cloud
+              (MongoDB, Azure), Git
+            </div>
+          </div>
+          <div class="item">
+            <div class="label">AI, Data, ML</div>
+            <div>
+              DL, Data Analysis, NLP, Python, R, SQL, Scikit-Learn, LangChain,
+              Hugging Face, MLDevops
+            </div>
+          </div>
+          <div class="item">
+            <div class="label">Language Skills</div>
+            <div>
+              English (Fluent), Chinese (Native), Danish (Beginner - Module 1)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+        <div class="item">
+          <div class="item-title">
+            <span>
+              Metamorphic Testing of Relation Extraction Models · Algorithms
+              2023
+            </span>
+            <span class="item-meta">DOI: 10.3390/a16020102</span>
+          </div>
+          <ul>
+            <li>Co-author on evaluation methods for relation extraction</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>
+              Sa-FEM: Feature Selection for Performance Prediction · Sensors
+              2022
+            </span>
+            <span class="item-meta">DOI: 10.3390/s22228838</span>
+          </div>
+          <ul>
+            <li>Co-author on combinatorial feature selection methods</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Awards</h2>
+        <div class="item">
+          <div class="item-title">
+            <span>Provincial Government Scholarship</span>
+            <span class="item-meta">Top 1/218</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>Outstanding Student Scholarship</span>
+            <span class="item-meta">Second Class</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span
+              >China Student Service Outsourcing Innovation Competition</span
+            >
+            <span class="item-meta">Second Prize · 2021</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <span>
+              Zhejiang Service Outsourcing Innovation Competition (Captain)
+            </span>
+            <span class="item-meta">First Prize · 2021</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
